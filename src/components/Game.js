@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 import Pancake from './Pancake';
@@ -16,10 +17,8 @@ class Game extends React.Component {
     };
   }
 
-  // TODO: create a componentWillMount() which will set the current time
-
-  componentWillMount() {
-    this.setCurrentTime()
+  componentDidMount() {
+    this.setCurrentTime();
   }
 
   setCurrentTime = () => {
